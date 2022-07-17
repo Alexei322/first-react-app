@@ -1,8 +1,11 @@
 import React from "react"
 
 const NewExpenseButton = (props) => {
+    const changeState = () => {
+        props.changeFormDisplay();
+    }
     return (
-        <button>Add New Expense</button>
+        <button onClick={changeState}>Add New Expense</button>
     )
 }
 
